@@ -53,3 +53,20 @@ set4 = set(('James', 'John', 'Peter', 'James', 'John', 'Peter','Martin'))
 print(set4)
 # OUTPUT:
 # {'James', 'Martin', 'Peter', 'John'}
+
+
+
+
+
+# we can also pass a range to the set() function
+set5 = set(range(1, 11))
+print(set5)
+# OUTPUT:
+# {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+
+
+
+
+# we can also pass a dictionary to the set() function 
+# but only the keys will be added to the set and not the values 
