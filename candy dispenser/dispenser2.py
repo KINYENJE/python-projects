@@ -86,7 +86,7 @@ class Candy_Dispenser:
     Button(self.right_panel, text="Push", fg="white", bg=self.color_primary, font=("Arial", 14, "bold"),
            relief=RAISED,bd=7,command=self.push).place(x=52, y=100)
     
-    Button(self.right_panel, text="Pop", fg="white", bg=self.color_primary, font=("Arial", 14, "bold"),
+    Button(self.right_panel, text="Pop", fg="white", bg=self.color_secondary, font=("Arial", 14, "bold"),
            relief=RAISED,bd=7,command=self.pop).place(x=52, y=150)
     
     Button(self.right_panel, text="Peek", fg="white", bg=self.color_primary, font=("Arial", 14, "bold"),
@@ -107,6 +107,8 @@ class Candy_Dispenser:
       self.left_panel.delete(candy['label'])
 
       self.update_dispenser('pop')
+      showinfo("Popped", f'Popped "{candy["tag"]}"')
+      
     else:
       showerror("Stack Underflow!","The Candy Dispenser is empty.")
 
