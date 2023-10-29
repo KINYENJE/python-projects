@@ -1,4 +1,4 @@
-from tkinter import Button, Canvas, LEFT, Label, RAISED, RIGHT, Tk
+from tkinter import Button, Canvas, LEFT, RAISED, RIGHT, Tk
 from tkinter.messagebox import showerror, showinfo
 
 
